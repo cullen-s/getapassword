@@ -8,13 +8,18 @@
     <title>pwdgen</title>
 </head>
 <body>
-    <div class="generator">
-        <div class="form">
-          <form class=pwgen-form>
-            <input type="text" readonly id="resultfield" onclick="copyReField()">
-            <button type="submit" form="pwgen-form"  id="generatebutton" onclick='run()'>Generate a Password</button>
-          </form>
+  <div class="generator">
+    <div class="form">
+      <form class=pwgen-form>
+        <input type="text" readonly id="resultfield" onclick="copyReField()">
+        
+        <div class="slidecontainer">
+    <input type="range" min="4" max="30" value="12" class="slider" id="pwdRangeSlider" onChange="run(this.value)" >
         </div>
-      </div>
+        
+        <button type="submit" form="pwgen-form" id="generatebutton" onclick='run(12)'>Refresh</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
