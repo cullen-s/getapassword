@@ -2,12 +2,17 @@ body {
   color: #fff;
   background: linear-gradient(-5deg, #232b68, #4b517f, #232b68, #4b517f);
   background-size: 400% 400%;
-  -webkit-animation: gradientBackground 10s ease infinite;
-          animation: gradientBackground 10s ease infinite;
+  -webkit-animation: gradientBackground 140s ease infinite;
+          animation: gradientBackground 140s ease infinite;
+}
+
+p {
+  color: black;
 }
 
 .generator {
-  width: 360px;
+  width: 560px;
+  heigh: 560px;
   padding: 8% 0 0;
   margin: auto;
 }
@@ -19,7 +24,7 @@ body {
   border-radius: 10px;
   max-width: 360px;
   margin: 0 auto 100px;
-  padding: 45px;
+  padding: 65px;
   text-align: center;
 }
 
@@ -32,7 +37,8 @@ body {
   margin: 0 0 15px;
   padding: 15px;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 24px;
+  text-align: center;
 }
 
 .form input:hover {
@@ -42,7 +48,7 @@ body {
 .slider {
   -webkit-appearance: none;
   width: 10px;
-  height: 40px;
+  height: 5px;
   background: #232b68;
   cursor: pointer;
 }
@@ -109,4 +115,3 @@ body {
   100% {
     background-position: 0% 50%;
   }
-}
