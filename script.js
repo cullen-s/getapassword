@@ -22,3 +22,10 @@ function copyReField() {
   navigator.clipboard.writeText(ttc.value);
   ttc.value = "Password Copied to Clipboard!";
 }
+
+//run(15) on-load so it's not blank when you first visit the page
+document.addEventListener('readystatechange', event => { 
+    if (event.target.readyState === "complete") {
+        run(15);
+    }
+});
